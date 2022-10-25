@@ -16,7 +16,6 @@ app.get('/zipcode', async (req, res) => {
     try {
         const results = await fetch(`https://app.zipcodebase.com/api/v1/radius?apikey=${API}&code=${code}&radius=${radius}&country=${country}`)
         const jsonResult = await results.json()
-        console.log(jsonResult);
         res.status(200).json(jsonResult);
     }
     catch (err) {
