@@ -1,0 +1,14 @@
+title Zipcode by radius microservice
+
+
+participant Client
+participant Microservice
+participant GatewayAPI
+
+Client->Microservice:http rquest GET
+Microservice->GatewayAPI:http requests
+Microservice<--GatewayAPI:response body
+Client<--Microservice:JSON formatted response
+
+
+ 
