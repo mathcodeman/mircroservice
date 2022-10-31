@@ -34,3 +34,5 @@ Returned body:
         }
     ]
 }
+
+![alt text](UML_image.png)
